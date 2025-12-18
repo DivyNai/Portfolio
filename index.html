@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Divy • Web Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Parth Limbachiya — Web Developer portfolio: projects, skills, timeline, and contact."
+    />
+    <meta property="og:title" content="Parth • Web Developer Portfolio" />
+    <meta
+      property="og:description"
+      content="Projects, skills, and contact details of Parth (GJ_Parth)."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#111111" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Parth",
+        "alternateName": "GJ_Parth",
+        "url": "https://example.com/",
+        "jobTitle": "Web Developer",
+        "sameAs": ["https://github.com/GJ-Parth", "https://www.linkedin.com/"]
+      }
+    </script>
+  </head>
+  <body>
+    <nav class="nav">
+      <div class="container">
+        <div class="inner">
+          <div class="row">
+            <span class="brand">Divy Nai</span>
+            <span class="pill">Open to Work</span>
+          </div>
+          <button id="menu-toggle" class="menu-toggle" aria-label="Open Menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#timeline">Timeline</a>
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header id="home" class="container hero">
+      <div>
+        <span class="tag">Hi there, I’m</span>
+        <h1 class="title">Divy Nai<span class="muted"></span></h1>
+        <p class="subtitle" id="typewriter">
+          Web Developer • Frontend first • Loves clean UI
+        </p>
+        <div class="hero-cta">
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+          <a class="btn" href="Divy Resume.pdf" download>Download Resume</a>
+        </div>
+        <div class="pill-row" style="margin-top: 14px">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">JavaScript</span>
+          <span class="badge">Python</span>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <div class="avatar" aria-label="Parth avatar placeholder">
+          <span><img src="photos/photo.png" alt="Profile photo" /></span>
+        </div>
+        <div class="glow" aria-hidden="true"></div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-desc">
+            I’m a BCA student from Vivekanand College (Under Veer Narmad South Gujarat University) , 
+            Gujarat. focused on building fast, responsive, and accessible web site. I enjoy turning
+            ideas into real, usable interfaces and learning full‑stack step by step.
+          </p>
+          <div class="grid cols-3">
+            <div class="card">
+              <h3>What I do</h3>
+              <p>
+                Frontend development, responsive UI, and neat CSS. Exploring
+                backend with Php + Python + MongoDB.
+              </p>
+            </div>
+            <div class="card">
+              <h3>What I value</h3>
+              <p>
+                Simple UX, clean code, and performance. "First make it work,
+                then make it nice, then make it fast."
+              </p>
+            </div>
+            <div class="card">
+              <h3>Currently</h3>
+              <p>
+                Learning React & building small projects. Open to
+                freelance/internship opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills">
+        <div class="container">
+          <h2 class="section-title">My Tech Stack</h2>
+          <p class="section-desc">
+            Technologies and tools I use to bring ideas to life.
+          </p>
+
+          <div class="skills-grid">
+            <div class="skill-category card">
+              <h3>Frontend</h3>
+              <div class="skill-items-grid">
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#e54d26"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                  <span>HTML</span>
+                </div>
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#264de4"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                  <span>CSS</span>
+                </div>
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#f0db4f"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                  <span>JavaScript</span>
+                </div>
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#61dafb"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="2"></circle>
+                    <path
+                      d="M12 2v2m0 16v2m-9-9H1m18 0h-2m-6.36-6.36L3.64 3.64m14.14 0l-2.12 2.12m0 12.72l2.12 2.12m-14.14 0l2.12-2.12"
+                    ></path>
+                  </svg>
+                  <span>React</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="skill-category card">
+              <h3>Backend & Tools</h3>
+              <div class="skill-items-grid">
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#8cc84b"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                    <path d="M20 12l-8 8-8-8M12 2v20"></path>
+                  </svg>
+                  <span>Git</span>
+                </div>
+                
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#8892BF"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                    <path d="M20 12l-8 8-8-8M12 2v20"></path>
+                  </svg>
+                  <span>Php</span>
+                </div>
+                
+                <div class="skill-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="#387eb8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    ></path>
+                  </svg>
+                    <path d="M20 12l-8 8-8-8M12 2v20">
+                    </path>
+                  </svg>
+                  <span>Python</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-desc">
+            A few things I’ve built recently. some project under work.
+          </p>
+          <div class="grid cols-3">
+            <article class="card">
+              <div class="p-cover">
+                <img
+                  src="photos/CineBook.png"
+                  alt="CineBook - Movie Booking System Project Screenshot"
+                />
+              </div>
+              <h3>CineBook - Movie Booking System</h3>
+              <p>
+                For the movie management and booking. Clean UI with
+                HTML/CSS/JS/PHP.
+              </p>
+              <div class="pill-row">
+                <span class="badge">HTML</span>
+                <span class="badge">CSS</span>
+                <span class="badge">JS</span>
+                <span class="badge">Php</span>
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <!--<a
+                  class="btn"
+                  href="https://parth172l.github.io/assignment/"
+                  aria-label="Live demo"
+                  >Live</a>-->
+                <a
+                  class="btn"
+                  href="https://github.com/parth172L/assignment"
+                  aria-label="GitHub code"
+                  >Code</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <div class="p-cover">
+                <img
+                  src="photos/EventBook.png"
+                  alt="EventBook - Event Management System Project Screenshot"
+                />
+              </div>
+              <h3>EventBook - Event Management System</h3>
+              <p>
+                For the Event management And booking and responsive
+                layout.
+              </p>
+              <div class="pill-row">
+                <span class="badge">React</span>
+                <span class="badge">Node</span>
+              </div>
+              <div class="row" style="margin-top: 10px">
+                <!--<a
+                class="btn"
+                  href="https://parth172l.github.io/IPL-Team-Website/"
+                  >Live</a>-->
+                
+                <a
+                  class="btn"
+                  href="https://github.com/parth172L/IPL-Team-Website"
+                  >Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="timeline">
+        <div class="container">
+          <h2 class="section-title">Timeline</h2>
+          <p class="section-desc">
+            Highlights from recent learning and projects.
+          </p>
+          <div class="timeline">
+            <div class="t-item">
+              <h3>2025 – Enhanced Skill Development</h3>
+              <p class="muted">
+                Focused on advanced React concepts and full-stack applications.
+              </p>
+            </div>
+            <div class="t-item">
+              <h3>2024 – Core Web Technologies</h3>
+              <p class="muted">
+                Mastered HTML, CSS, and JavaScript, building multiple static and
+                dynamic projects.
+              </p>
+            </div>
+            <div class="t-item">
+              <h3>2023 – Began Development Journey</h3>
+              <p class="muted">
+                Started learning the fundamentals of web development and
+                programming.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <div class="contact-wrapper">
+            <h2 class="section-title">Let's build something!</h2>
+            <p class="section-desc">
+              Have a project in mind or just want to say hi? Feel free to reach
+              out.
+            </p>
+            <form
+              id="contactForm"
+              action="mailto:parth@example.com"
+              method="post"
+              enctype="text/plain"
+            >
+              <input type="text" name="name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="message"
+                placeholder="Your message"
+                required
+              ></textarea>
+              <button class="btn" type="submit" text="center">Send Message</button>
+            </form>
+            <div class="social-links">
+              <a href="mailto:prakashnayi001@gmail.com" title="Email">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/DivyNai"
+                target="_blank"
+                rel="noreferrer"
+                title="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/parth-limbachiya-774604341/"
+                target="_blank"
+                rel="noreferrer"
+                title="LinkedIn"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        © <span id="year"></span> Parth • All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
