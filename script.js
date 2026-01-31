@@ -1,11 +1,21 @@
-// --- Add this code for the mobile menu at the top of the file ---
 const menuToggle = document.getElementById("menu-toggle");
 const navLinks = document.querySelector(".nav-links");
 
-menuToggle.addEventListener("click", () => {
+function toggleMenu() {
   navLinks.classList.toggle("active");
+}
+
+menuToggle.addEventListener("click", toggleMenu);
+
+// Close menu when a nav link is clicked (Mobile UX)
+const navItems = document.querySelectorAll(".nav-links a");
+navItems.forEach((item) => {
+  item.addEventListener("click", () => {
+    if (navLinks.classList.contains("active")) {
+      navLinks.classList.remove("active");
+    }
+  });
 });
-// --- End of new code ---
 
 // Active nav link on scroll
 const links = document.querySelectorAll(".nav-links a");

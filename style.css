@@ -42,11 +42,14 @@ img {
 
 /* Navbar */
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
-  background: #000000;
-  backdrop-filter: saturate(140%) blur(10px);
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.85); /* Slightly more opaque for better readability */
+  backdrop-filter: saturate(140%) blur(20px);
   border-bottom: 1px solid #333;
 }
 
@@ -79,6 +82,8 @@ img {
   padding: 8px 12px;
   border-radius: 10px;
   color: var(--muted);
+  font-weight: 500;
+  transition: all 0.2s ease;
 }
 
 .nav-links a.active,
@@ -116,6 +121,7 @@ img {
   border: none;
   color: var(--text);
   cursor: pointer;
+  padding: 4px;
 }
 
 /* Hero */
@@ -123,7 +129,7 @@ img {
   display: grid;
   grid-template-columns: 1.3fr 1fr;
   gap: 40px;
-  padding: 70px 0 40px;
+  padding: 120px 0 40px; /* Increased top padding mainly for Fixed Navbar */
   align-items: center;
   position: relative;
   z-index: 1;
@@ -205,6 +211,7 @@ img {
 /* Sections */
 section {
   padding: 64px 0;
+  scroll-margin-top: 80px; /* Ensures link jumps don't hide under fixed header */
 }
 
 .section-title {
@@ -464,6 +471,7 @@ textarea {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
+    padding-top: 100px;
   }
 
   .hero-cta {
@@ -480,7 +488,8 @@ textarea {
 
   .menu-toggle {
     display: block;
-    z-index: 100;
+    z-index: 102; /* Above the dark overlay/nav-links */
+    position: relative;
   }
 
   .nav-links {
@@ -488,14 +497,24 @@ textarea {
     top: 0;
     right: 0;
     width: 250px;
-    height: 100%;
-    background: #000;
+    height: 100vh; /* Full viewport height */
+    background: #0d0d0d; /* Slightly different dark */
+    box-shadow: -5px 0 30px rgba(0,0,0,0.5);
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 30px;
     transform: translateX(100%);
-    transition: transform 0.3s ease-out;
-    z-index: 99;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 101;
+    border-left: 1px solid #222;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding: 12px;
   }
 
   .nav-links.active {
@@ -507,6 +526,7 @@ textarea {
   .grid.cols-2,
   .grid.cols-3 {
     grid-template-columns: 1fr;
+    gap: 24px;
   }
 }
 /* --- Responsive Media Queries END --- */
